@@ -7,10 +7,11 @@ import { ServerElement } from './server-element.model';
   styleUrls: ['./server-element.component.css']
 })
 export class ServerElementComponent implements OnInit {
-  @Input() element: ServerElement;
+  // tslint:disable-next-line: no-input-rename
+  @Input('srvElement') element: ServerElement;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
